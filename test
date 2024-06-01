@@ -143,6 +143,10 @@ function Buso()
 end
 
 function TPa(p)
+ AllCharacterPart = {}
+                    for i,v in pairs(AllCharacterPart) do
+                        v.CanCollide = false
+                    end
     local distance = (p.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
     local speed = 250
     if distance < 200 then
